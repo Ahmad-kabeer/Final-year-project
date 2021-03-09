@@ -1,0 +1,19 @@
+﻿<Window x:Class="ChatBotAssistant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBotAssistant"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="452" Width="449.5">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="0,0,0,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="InputMessage" HorizontalAlignment="Left" Height="79" Margin="10,330,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="336" TextChanged="InputMessage_TextChanged" KeyDown="InputMessage_KeyDown" BorderBrush="#FFF5A3A3" Foreground="#FFB97A7A"/>
+        <Button x:Name="EnterButton" Content="enter" HorizontalAlignment="Left" Margin="351,330,0,0" VerticalAlignment="Top" Width="81" Height="79" Click="EnterButton_Click" BorderBrush="#FFFDB1B1" Foreground="#FFC17A7A" Background="White"/>
+        <StackPanel x:Name="Responce" HorizontalAlignment="Left" Height="315" Margin="10,10,0,0" VerticalAlignment="Top" Width="422"/>
+
+    </Grid>
+</Window>
